@@ -17,14 +17,33 @@ bash create-service.sh <project-name>
 - root/
     - src/
         - controllers/
+            - requestController.ts
+        - database/
+            - dbConfig.ts
         - routes/
+            - requestRoutes.ts
         - models/
+        - middleware/
         - services/
+            - requestService.ts
         - utils/
+            - threadWorker
         - server.ts
     - .env
     - .gitignore
     - package.json
     - tsconfig.json
     - README.md
+```
+
+After creating the project add the following scripts to the package.json file.
+
+```json
+ "start": "npm run build && node dist/server.js",
+    "dev": "npm run watch && nodemon dist/server.js",
+    "build": "tsc",
+    "serve": "node dist/server.js",
+    "watch": "tsc -w",
+    "test": "jest",
+    "test:watch": "jest --watch"
 ```
