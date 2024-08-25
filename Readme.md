@@ -10,3 +10,21 @@ Save this file locally and run the following command to create a new project.
 ```bash
 bash create-service.sh <project-name>
 ```
+
+### Folder Structure
+
+```
+- root/
+    - src/
+        - controllers/
+        - routes/
+        - models/
+        - services/
+        - utils/
+        - server.ts
+    - .env
+    - .gitignore
+    - package.json
+    - tsconfig.json
+    - README.md
+```
