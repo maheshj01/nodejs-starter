@@ -39,11 +39,11 @@ bash create-service.sh <project-name>
 After creating the project add the following scripts to the package.json file.
 
 ```json
- "start": "npm run build && node dist/server.js",
-    "dev": "npm run watch && nodemon dist/server.js",
-    "build": "tsc",
-    "serve": "node dist/server.js",
-    "watch": "tsc -w",
-    "test": "jest",
-    "test:watch": "jest --watch"
+"start": "npm run build && node dist/server.js",
+"dev": "npm run watch && nodemon dist/server.js",
+"build": "tsc",
+"serve": "node dist/server.js",
+"watch": "tsc -w",
+"test": "jest",
+"test:watch": "jest --watch"
 ```
